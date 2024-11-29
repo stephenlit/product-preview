@@ -38,7 +38,7 @@ This is the mobile view:
 ### Links
 
 -   Solution URL: [https://github.com/stephenlit/product-preview](https://github.com/stephenlit/product-preview)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Live Site URL: [https://stephenlit.github.io/product-preview/](https://stephenlit.github.io/product-preview/)
 
 ## My process
 
