@@ -33,7 +33,7 @@ This is the desktop view:
 ![](./Screenshot-desktop.png)
 
 This is the mobile view:
-![](./Screenshot-mobile.png)
+![](./screenshot-mobile.png)
 
 ### Links
 
