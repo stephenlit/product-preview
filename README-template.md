@@ -1,111 +1,103 @@
 # Frontend Mentor - Product preview card component solution
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+-   [Overview](#overview)
+    -   [The challenge](#the-challenge)
+    -   [Screenshot](#screenshot)
+    -   [Links](#links)
+-   [My process](#my-process)
+    -   [Built with](#built-with)
+    -   [What I learned](#what-i-learned)
+    -   [Continued development](#continued-development)
+    -   [Useful resources](#useful-resources)
+-   [Author](#author)
+-   [Acknowledgments](#acknowledgments)
 
 ## Overview
+
+This is just a simple project to practice my HTML and CSS skills. I found this on Frontend Mentor and decided to give it a try.
 
 ### The challenge
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+-   View the optimal layout depending on their device's screen size
+-   See hover and focus states for interactive elements
 
 ### Screenshot
 
-![](./screenshot.jpg)
+This is the desktop view:
+![](./Screenshot-desktop.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+This is the mobile view:
+![](./Screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Add solution URL here](https://your-solution-url.com)
+-   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
+So this was pretty simple project. I wanted to do this using the Astro framework to learn more about setting it up and using it.
+I added tailwind for the styling in this project as well, I have not used it much before and I am still learning it.
+
+I took out pencile and drew out the layout so that I could get a better understanding of the layout. I decided to use flex for the main layout because it seem best.
+Likely could of done it in grid but flex worked better with the flow of the page.I didn't start this mobile first becuase it seem to be more logical to do it
+desktop first.
+
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+-   Semantic HTML5 markup
+-   CSS
+-   Flexbox
+-   [Astro]https://astro.build/) - Astro framework
+-   [Tailwind](https://tailwindcss.com/) - CSS framework
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to set up the Astro framework and install Tailwind in it. Astro makes it really easy to get started with Tailwind—you can simply use the CLI to install it by running npx astro add tailwind. Setting up the custom styles wasn’t too difficult either. Here’s my Tailwind configuration file. I know the naming could be improved, but this is what I came up with.
 
-To see how you can add code snippets, see below:
+```/** @type {import('tailwindcss').Config} */
+export default {
+    content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+    theme: {
+        extend: {
+            colors: {
+                cyan: 'hsl(158, 36%, 37%)',
+                cream: 'hsl(30, 38%, 92%)',
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+                darkBlue: 'hsl(212, 21%, 14%)',
+                darkGrayishBlue: 'hsl(228, 12%, 48%)',
+                white: 'hsl(0, 0%, 100%)',
+            },
+            fontFamily: {
+                sans: ['Montserrat', 'sans-serif'],
+                heading: ['Fraunces', 'serif'],
+            },
+        },
+    },
+    plugins: [],
+};
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I’m planning to move on to more challenging projects. I did this one just to get my feet wet. I really like the Astro framework, and next, I’m going to create components for my upcoming project. It’s incredibly simple to add a React .jsx component to Astro.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+-   [Astro](https://astro.build/) - The documentation for Astro is really well done and easy to follow.
+-   [Tailwind](https://tailwindcss.com/) - The documentation for Tailwind is really easy to follow.
+-   [Colt Steel Discord](https://discord.gg/AKFkMuYC) - The discord for Colt Steel. There are a lot of great people in this server
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+-   Stephen Little -[Frontend Mentor](https://www.frontendmentor.io)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+The people on Colt Steele's Discord server are an excellent resource for learning. They’re always happy to help, but make sure to ask for help properly by providing context and sharing relevant code.
