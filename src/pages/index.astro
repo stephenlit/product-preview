@@ -41,10 +41,11 @@
     <body
         class="bg-cream font-heading m-4 flex items-center sm:h-screen sm:justify-center"
     >
-        <article
+        <main
             class="w-[600px] overflow-hidden rounded-lg shadow-lg sm:flex sm:overflow-hidden"
         >
             <div class="flex-1">
+                <!-- Image section -->
                 <img
                     class="hidden h-full w-full object-cover sm:block"
                     src="image-product-desktop.jpg"
@@ -56,19 +57,23 @@
                     alt="perfume product image"
                 />
             </div>
-            <div class="flex-1 bg-white">
+            <!-- Product details section -->
+            <article class="flex-1 bg-white">
                 <div
                     class="flex h-full flex-col justify-between gap-5 px-10 py-5"
                 >
-                    <h2
-                        class="text-darkGrayishBlue font-sans text-sm font-bold uppercase tracking-[.25rem] opacity-50"
-                    >
-                        Perfume
-                    </h2>
+                    <header>
+                        <h2
+                            class="text-darkGrayishBlue font-sans text-sm font-bold uppercase tracking-[.25rem] opacity-50"
+                        >
+                            Perfume
+                        </h2>
 
-                    <h1 class="text-3xl font-bold leading-7">
-                        Gabrielle Essence Eau De Parfum
-                    </h1>
+                        <h1 class="text-3xl font-bold leading-7">
+                            Gabrielle Essence Eau De Parfum
+                        </h1>
+                    </header>
+
                     <p class="text-darkGrayishBlue">
                         A floral, solar and voluptuous interpretation composed
                         by Olivier Polge, Perfumer-Creator for the House of
@@ -81,13 +86,16 @@
                             >$169.99</span
                         >
                     </div>
-                    <button
-                        class="bg-cyan hover:bg-darkBlue flex justify-center gap-2 rounded-lg py-2 text-sm text-white"
-                    >
-                        <img src="icon-cart.svg" alt="cart icon" />Add to Cart</button
-                    >
+                    <footer>
+                        <button
+                            class="bg-cyan hover:bg-darkBlue flex justify-center gap-2 rounded-lg py-2 text-sm text-white"
+                        >
+                            <img src="icon-cart.svg" alt="cart icon" />Add to
+                            Cart</button
+                        >
+                    </footer>
                 </div>
-            </div>
-        </article>
+            </article>
+        </main>
     </body>
 </html>
